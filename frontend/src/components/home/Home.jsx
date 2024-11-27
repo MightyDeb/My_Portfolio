@@ -7,6 +7,17 @@ import venusImage from "../../images/venus.jpg"
 import spaceImage from "../../images/space.jpg"
 import {Typography} from "@mui/material"
 import Timeline from "../timeline/Timeline"
+import {
+  SiCplusplus,
+  SiReact,
+  SiJavascript,
+  SiMongodb,
+  SiNodedotjs,
+  SiExpress,
+  SiCss3,
+  SiHtml5,
+  SiThreedotjs,
+} from "react-icons/si";
 
 const Home = () => {
   useEffect(()=>{
@@ -119,6 +130,17 @@ const Home = () => {
           </div>
         </div>
         <div className="cubeShadow"></div>
+        <div className="homeSkillsBox">
+          <SiCplusplus />
+          <SiHtml5 />
+          <SiCss3 />
+          <SiJavascript />
+          <SiMongodb />
+          <SiExpress />
+          <SiReact />
+          <SiNodedotjs />
+          <SiThreedotjs />
+        </div>
       </div>
     </div>
   )

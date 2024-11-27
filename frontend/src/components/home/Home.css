@@ -93,6 +93,42 @@
 
 @keyframes cubeShadow{
   to{
-    transform: translateY(-10px);
+    transform: scale(1.2) translateY(-10px);
+  }
+}
+
+.homeSkillsBox{
+  background-color: hsl(250, 100%, 75%);
+  padding: 0 2vmax;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: -300px;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.homeSkillsBox > svg {
+  font-size: 5vmax;
+  color: rgb(255,255,255);
+  transition: all 0.5s;
+  margin: 10px;
+}
+.homeSkillsBox > svg:hover{
+  transform: scale(1.5);
+}
+
+@keyframes homeSkillsBoxAnimationOn{
+  from{
+    right: -300px;
+  }to{
+    right: 40px;
+  }
+}
+@keyframes homeSkillsBoxAnimationOff{
+  from{
+    right: 40px;
+  }to{
+    right: -300px;
   }
 }
