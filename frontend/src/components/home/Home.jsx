@@ -5,6 +5,8 @@ import {OrbitControls} from "three/examples/jsm/controls/OrbitControls"
 import moonImage from "../../images/moon.jpg"
 import venusImage from "../../images/venus.jpg"
 import spaceImage from "../../images/space.jpg"
+import {Typography} from "@mui/material"
+import Timeline from "../timeline/Timeline"
 
 const Home = () => {
   useEffect(()=>{
@@ -87,9 +89,37 @@ const Home = () => {
   }, [])
   return (
     <div className='Home'>
-      <canvas className='homeCanvas'>
-
-      </canvas>
+      <canvas className='homeCanvas'></canvas>
+      <div className="homeContainer">
+        <Typography variant="h3">TIMELINE</Typography>
+        <Timeline timeline={[1,2,3,4]} />
+      </div>
+      <div className="homeSkills">
+        <Typography variant='h3'>
+          SKILLS
+        </Typography>
+        <div className="homeCubeSkills">
+          <div className="homeCubeSkillsFaces homeCubeSkillsFace1">
+            <img src="https://wallpapercave.com/wp/9gAmpUH.jpg" alt="Face1" />
+          </div>
+          <div className="homeCubeSkillsFaces homeCubeSkillsFace2">
+            <img src="https://wallpapercave.com/wp/9gAmpUH.jpg" alt="Face2" />
+          </div>
+          <div className="homeCubeSkillsFaces homeCubeSkillsFace3">
+            <img src="https://wallpapercave.com/wp/9gAmpUH.jpg" alt="Face3" />
+          </div>
+          <div className="homeCubeSkillsFaces homeCubeSkillsFace4">
+            <img src="https://wallpapercave.com/wp/9gAmpUH.jpg" alt="Face4" />
+          </div>
+          <div className="homeCubeSkillsFaces homeCubeSkillsFace5">
+            <img src="https://wallpapercave.com/wp/9gAmpUH.jpg" alt="Face5" />
+          </div>
+          <div className="homeCubeSkillsFaces homeCubeSkillsFace6">
+            <img src="https://wallpapercave.com/wp/9gAmpUH.jpg" alt="Face6" />
+          </div>
+        </div>
+        <div className="cubeShadow"></div>
+      </div>
     </div>
   )
 }
